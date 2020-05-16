@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Samantha Lima</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samantha Lima</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=DM+Mono:wght@300;500&family=Major+Mono+Display&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/25cb39276e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Samantha Lima</h1>
-        <h2 class="site-subtitle">Customer Success | Customer Experience</h2>
-      </header>
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="title">
+    <h1 class="site-title">Samantha Lima</h1>
+    <h2 class="site-subtitle">Customer Success | Customer Experience</h2>
+  </div>
+  </header>
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+    <figure class="avatar">
+      <img src="./img/T04H1T1SR-URZDXSXPU-fdef9863cdba-512.png" alt="">
+    </figure>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, vel odit! Eos, iste! Nostrum aliquam quasi mollitia minus facere nihil voluptas unde dolore consequuntur, numquam quo, consequatur pariatur possimus dolor.
+    </p>
+
+  </section>
+  <section class="projetos container" id="projetos">
+    <h2>Projetos</h2>
+    <div class="grid">
+    <figure>
+      <img class="img-projetos" src="./img/video.jpg" alt="Vídeos">
+      <figcaption>Vídeos</figcaption>
+    </figure>
+    <figure>
+      <img class="img-projetos" src="./img/dinheiro-de-volta-cashback-300x158.jpg" alt="Artigos">
+      <figcaption>Artigos</figcaption>
+    </figure>
+  </div>
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://www.linkedin.com/in/samanthalima/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:sah_slima@hotmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a target="_blank" href="https://github.com/sahslima">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
 </body>
+
 </html>
