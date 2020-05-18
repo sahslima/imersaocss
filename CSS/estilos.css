@@ -216,3 +216,8 @@ body {
     display: block;
     padding: 10px 20px;
   }
+
+  .footer a {
+    color: palevioletred;
+    text-decoration: underline;
+  }
