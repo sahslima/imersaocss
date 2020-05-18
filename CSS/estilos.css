@@ -1,8 +1,7 @@
-/* soft reset do css */
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +12,24 @@ body {
     font-size: 18px;
   }
   
+  @media (min-width: 320px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
   header {
     height: 100vh;
     display: flex;
@@ -20,11 +37,10 @@ body {
     align-items: center;
   }
 
-
   .menu {
     background-color: purple;
     position: fixed;
-    width: 100vh;
+    width: 100vw;
     top: 0;
     z-index: 1;
   }
@@ -91,23 +107,26 @@ body {
   .sobre,
   .contato,
   .projetos {
-    padding: 2em;
-    min-height: 100vh;
+    padding: 5em;
+    min-height: 80vh;
   }
 
   .sobre h2,
-  .contato h2,
-  .projetos h2 {
+  .contato h2 {
     font-family: 'Major Mono Display', monospace;
     color: purple;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     font-size: 2em;
   }
 
+  .sobre,
+  .contato {
+    background-color: whitesmoke;
+ }
+
   .sobre p {
-    color: whitesmoke;
-    text-indent: 1.4em;
-    margin-bottom: 1.4em;
+    color: black;
+    margin-bottom: 3em;
     text-align: justify;
   }
 
@@ -123,24 +142,48 @@ body {
 
   .sobre .avatar {
     float: left;
-    margin-right: 2em; 
+    margin-right: 5em;
   }
 
   .sobre .avatar img {
     border-radius: 50%;
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
+    padding: 15px;
+  }
+
+  .projetos h2 {
+    font-family: 'Major Mono Display', monospace;
+    color: whitesmoke;
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+
+  .projetos {
+     background-color: palevioletred;
+  }
+
+  .projetos .grid {
+    display: grid;
+    gap: 4em;
+  }
+
+  @media (min-width: 768px) {
+    .projetos .grid {
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    }
   }
 
   .projetos figure {
     text-align: center;
+    color: whitesmoke;
   }
 
   .img-projetos {
-    height: 180px;
-    width: 250px;
+    height: 160px;
+    width: 280px;
     object-fit: cover;
-    border-radius: 5px;
     transition: transform 1s;
   }
 
@@ -160,5 +203,16 @@ body {
   .contato a:active,
   .contato a:hover {
     text-decoration: none;
-    text-shadow: 0px 0px 5px whitesmoke;
+    text-shadow: 0px 0px 3px purple;
+  }
+
+  .footer {
+    background-color: purple;
+    color: whitesmoke;
+    text-align: center;
+  }
+ 
+  .footer p {
+    display: block;
+    padding: 10px 20px;
   }
